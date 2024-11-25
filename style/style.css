@@ -170,6 +170,15 @@ a {
 
 /* end banner */
 
+/* underline */
+.title_underline {
+  display: block;
+  margin-top: -8px;
+  width: 80%;
+  height: 4px;
+  background-color: var(--main-color);
+}
+
 /* destination */
 .destination {
   width: 100%;
@@ -196,13 +205,6 @@ a {
 .destination_title > h1 {
   font-size: 46px;
   color: var(--main-color);
-}
-
-.destination_title > .destination_title_underline {
-  margin-top: -8px;
-  width: 80%;
-  height: 4px;
-  background-color: var(--main-color);
 }
 
 .cards {
@@ -284,4 +286,239 @@ a {
 .discover a:hover {
   background-color: var(--hover-color);
   transition: 0.3s;
+}
+
+/* about us */
+
+.about-us {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-content {
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.about-us-title h1 {
+  font-size: 46px;
+  color: var(--main-color);
+}
+
+.about-us-desc {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-desc > p {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* our team */
+
+.our-team-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: var(--main-color);
+}
+
+.our-team-github {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.img {
+  border-radius: 9999px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* contact */
+
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us {
+  width: 1024px;
+}
+
+.contact {
+  margin-top: 32px;
+  padding: 32px;
+}
+
+.contact h1 {
+  padding-left: 6px;
+  color: #00712d;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-img {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+
+.form input {
+  width: 100%;
+  height: 46px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.message textarea {
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  font-size: 16px;
+  resize: none;
+}
+
+.form button {
+  width: 50%;
+  height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #347928;
+  transition: all 0.25s ease-in-out;
+  color: white;
+}
+
+.form button:hover {
+  background-color: var(--hover-color);
+  border: none;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  background-color: #ededed;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 1024px;
+  margin: 100px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* footer underline */
+.footer-title-underline {
+  margin-top: -8px;
+  width: 80%;
+  height: 2px;
+  background-color: var(--main-color);
+}
+
+.footer-menu-title {
+  color: var(--main-color);
+  width: fit-content;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.footer-nav-link > li {
+  list-style: none;
+}
+
+.footer-nav-link a {
+  color: var(--hover-color);
+}
+
+.footer-nav-link a:hover {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.footer-contact-title {
+  color: var(--main-color);
+  width: fit-content;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.footer-contact-link > li {
+  list-style: none;
+}
+
+.footer-contact-link a {
+  color: var(--hover-color);
+}
+
+.footer-contact-link a:hover {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.footer-about-title {
+  color: var(--main-color);
+  width: fit-content;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.footer-about p {
+  color: var(--hover-color);
+}
+
+.footer-line {
+  background-color: var(--hover-color);
+  width: 80%;
+  height: 1px;
 }

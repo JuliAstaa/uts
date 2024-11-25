@@ -9,7 +9,7 @@
   <body>
     <div class="main_container">
       <!-- banner -->
-      <div class="banner">
+      <div id="home" class="banner">
         <!-- STPD NAVBAR -->
         <header class="header">
           <!-- NAVBAR -->
@@ -26,11 +26,11 @@
                   <span class="line"></span>
                 </li>
                 <li>
-                  <a href="about_us">About Us</a>
+                  <a href="#about_us">About Us</a>
                   <span class="line"></span>
                 </li>
                 <li>
-                  <a href="contact_us">Contact Us</a>
+                  <a href="#contact_us">Contact Us</a>
                   <span class="line"></span>
                 </li>
               </ul>
@@ -174,7 +174,7 @@
         <div class="destination_content">
           <div class="destination_title">
             <h1>DESTINATION</h1>
-            <span class="destination_title_underline"></span>
+            <span class="title_underline"></span>
           </div>
           <div class="cards">
             <div href="" class="card">
@@ -186,12 +186,12 @@
               </div>
               <div class="desc">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos, odit?
+                  Batur: gunung berapi aktif, danau indah, panorama memukau,
+                  sejuk.
                 </p>
               </div>
               <div class="card-location">
-                <a href=""
+                <a href="https://maps.app.goo.gl/SPqpNWUcsSMKciDo8"
                   ><svg
                     class="card-location-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +222,155 @@
         </div>
       </div>
       <!-- about us -->
-      <div class="about-us"></div>
+      <div id="about_us" class="about-us">
+        <div class="about-us-content">
+          <div class="about-us-title">
+            <h1>ABOUT KINTAMANI</h1>
+            <span class="title_underline"></span>
+          </div>
+          <div class="about-us-desc">
+            <p>
+              Kecamatan Kintamani, yang terletak di Kabupaten Bangli, Bali,
+              adalah destinasi wisata alam yang memikat dengan keindahan Gunung
+              Batur dan Danau Batur. Selain hamparan hutan pinus yang sejuk,
+              kawasan ini juga memiliki Bukit Trunyan yang menawarkan
+              pemandangan spektakuler. Desa Trunyan sendiri dikenal dengan
+              tradisi unik dalam pemakaman yang menggunakan cara alami tanpa
+              mengubur, menarik perhatian wisatawan yang ingin mempelajari
+              kearifan lokal. Udara pegunungan yang segar, kekayaan budaya, dan
+              panorama yang indah menjadikan Kintamani pilihan sempurna untuk
+              trekking, fotografi, serta eksplorasi budaya Bali.
+            </p>
+          </div>
+          <div class="our-team-title">
+            <h1>OUR TEAMS</h1>
+            <span class="title_underline"></span>
+          </div>
+          <div class="our-team-github">
+            <div class="github">
+              <div class="img">
+                <a target="_blank" href="https://github.com/JuliAstaa"
+                  ><img src="img/the-runaway-guitarist.jpg" alt="" />
+                </a>
+              </div>
+              <div align="center" class="name"><p>Juliastaa</p></div>
+            </div>
+            <div class="github">
+              <div class="img">
+                <a target="_blank" href="https://github.com/Deaththricks"
+                  ><img src="img/deathtricks.jpg" alt="" />
+                </a>
+              </div>
+              <div align="center" class="name"><p>Deaththricks</p></div>
+            </div>
+            <div class="github">
+              <div class="img">
+                <a target="_blank" href="https://github.com/GusAdiHub"
+                  ><img src="img/GusAdi.png" alt="" />
+                </a>
+              </div>
+              <div align="center" class="name"><p>GusAdiHub</p></div>
+            </div>
+            <div class="github">
+              <div class="img">
+                <a target="_blank" href="https://github.com/GusYudistira"
+                  ><img src="img/GusYudistira.png" alt="" />
+                </a>
+              </div>
+              <div align="center" class="name"><p>GusYudistira</p></div>
+            </div>
+            <div class="github">
+              <div class="img">
+                <a target="_blank" href="https://github.com/indraanjay"
+                  ><img src="img/indraanjay.png" alt="" />
+                </a>
+              </div>
+              <div align="center" class="name"><p>Indraanjay</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact -->
+      <div id="contact_us" class="contact-us-container">
+        <div class="contact-us">
+          <div class="contact">
+            <div class="contact-content">
+              <div class="contact-img">
+                <img src="img/contact-us.png" alt="" />
+              </div>
+              <div class="form-contact">
+                <div class="title-contact">
+                  <h1>CONTACT US</h1>
+                </div>
+                <form class="form">
+                  <div class="inner-form">
+                    <input type="text" placeholder="Your name" />
+                  </div>
+                  <div class="inner-form">
+                    <input type="text" placeholder="Adress" />
+                  </div>
+                  <div class="inner-form">
+                    <input type="email" placeholder="Email" />
+                  </div>
+                  <div class="inner-form message">
+                    <textarea placeholder="Message"></textarea>
+                  </div>
+                  <button>Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-menu">
+              <div class="footer-menu-title">
+                <h1>Menu</h1>
+                <span class="footer-title-underline"></span>
+              </div>
+              <ul class="footer-nav-link">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#about_us">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <div class="footer-contact-title">
+                <h1>Contact Us</h1>
+                <span class="footer-title-underline"></span>
+              </div>
+              <ul class="footer-contact-link">
+                <li>
+                  <a href="mailto:example@gmail.com"
+                    >kintamanisekaliwiii@gmail.com</a
+                  >
+                </li>
+                <li><a href="#">082312345434</a></li>
+              </ul>
+            </div>
+            <div class="footer-about">
+              <div class="footer-about-title">
+                <h1>About Kintamani</h1>
+                <span class="footer-title-underline"></span>
+              </div>
+              <p>
+                Kecamatan Kintamani di Kabupaten Bangli, Bali, terkenal dengan
+                panorama Gunung dan Danau Batur, udara sejuk, serta daya tarik
+                budaya seperti Desa Trunyan. Cocok untuk trekking, fotografi,
+                dan menikmati keindahan alam.
+              </p>
+            </div>
+          </div>
+          <div class="footer-line"></div>
+          <div class="copyright">
+            <p>© 2024 BATUR. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
