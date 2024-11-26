@@ -218,9 +218,11 @@ a {
   background-color: var(--card-bg-color);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   cursor: pointer;
   overflow: hidden;
   border-radius: 5px;
+  position: relative;
 }
 
 .card-img {
@@ -244,7 +246,9 @@ a {
 
 .card-title {
   font-size: 12px;
-  margin-bottom: 2px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  line-height: 26px;
 }
 
 .desc {
