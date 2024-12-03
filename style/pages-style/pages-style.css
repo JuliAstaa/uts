@@ -185,7 +185,6 @@ a {
   width: 1024px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 40px;
 }
 .description-title {
@@ -197,7 +196,8 @@ a {
 .description-title > h1 {
   font-size: 46px;
   color: var(--main-color);
-  line-height: 46px;
+  line-height: 54px;
+  text-transform: uppercase;
 }
 
 .description-title > h2 {
