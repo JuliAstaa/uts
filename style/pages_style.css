@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --main-color: #00712d;
+    --hover-color: #6b4423;
+    --card-bg-color: #f8f8ee;
+  }
+
+/* banneer */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../img/hutan-pinusyes.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* navbar */
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .navbar {
+    width: 1024px;
+    height: 5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    top: 0;
+    position: absolute;
+    z-index: 9999;
+  }
+  
+  .logo {
+    color: white;
+  }
+  
+  .nav_link {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .nav_link > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav_link > li > .line {
+    width: 0%;
+    height: 2px;
+    background-color: var(--hover-color);
+  }
+  
+  .nav_link > li > a {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .nav_link > li:hover > .line {
+    color: var(--hover-color);
+    transition: 0.3s;
+    width: 75%;
+  }
+  
+  .nav_link > li:hover > a {
+    color: var(--hover-color);
+    transition: 0.3s;
+  }
+  
+  .link_sosmed {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+  }
+  
+  .link_sosmed > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    border-radius: 9999px;
+  }
+  
+  .link_sosmed > li > a:hover {
+    border: 2px solid var(--hover-color);
+    border-radius: 9999px;
+    transition: 0.3s;
+  }
+  .sosmed-icon {
+    stroke: white;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .link_sosmed > li > a:hover .sosmed-icon {
+    transition: 0.3s;
+    stroke: var(--hover-color);
+  }
+  
+  .link_sosmed li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* banner */
+  
+  .banner_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .moto {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 1024px;
+    height: 100%;
+    position: relative;
+  }
+  
+  .main_moto > h1 {
+    font-size: 89px;
+    line-height: 110px;
+    color: white;
+    width: 60%;
+  }
+  
+  .location {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .location > a {
+    font-size: 19px;
+    color: white;
+  }
+  
+  .location-icon {
+    stroke: white;
+  } 
+
+/* DESCRIPTION */
+
+#glagalinggah_desc {
+    height: fit-content;
+    display: flex;
+    width: 1024px;
+    align-items: start;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+
+#desc_title {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#desc_desc {
+
+}
+
+#desc_desc > p{
+    
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+}
+#desc_title > h2{
+  text-transform: uppercase;
+}
+
+/* desc end */
+
+/* map */
+#map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding-top: 30px;
+    background-color: #ededed;
+    padding-bottom: 30px;
+}
+
+/* destination */
+.destination {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.destination_content {
+  margin-top: 40px;
+  width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.destination_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination_title > h1 {
+  font-size: 46px;
+  color: var(--main-color);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1024px;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+
+.card-img {
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+
+.card-title {
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  line-height: 26px;
+}
+
+.desc {
+  margin-bottom: 8px;
+}
+
+.card-location a {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  color: var(--hover-color);
+}
+
+.card-underline {
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--hover-color);
+  margin: 4px 0;
+}
+
+.discover {
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.discover a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--main-color);
+}
+
+.discover a:hover {
+  background-color: var(--hover-color);
+  transition: 0.3s;
+}
+
+/* footer */
+/* footer */
+.footer {
+  width: 100%;
+  background-color: #ededed;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 1024px;
+  margin: 100px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* footer underline */
+.footer-title-underline {
+  margin-top: -8px;
+  width: 80%;
+  height: 2px;
+  background-color: var(--main-color);
+}
+
+.footer-menu-title {
+  color: var(--main-color);
+  width: fit-content;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.footer-nav-link > li {
+  list-style: none;
+}
+
+.footer-nav-link a {
+  color: var(--hover-color);
+}
+
+.footer-nav-link a:hover {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.footer-contact-title {
+  color: var(--main-color);
+  width: fit-content;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.footer-contact-link > li {
+  list-style: none;
+}
+
+.footer-contact-link a {
+  color: var(--hover-color);
+}
+
+.footer-contact-link a:hover {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.footer-about-title {
+  color: var(--main-color);
+  width: fit-content;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.footer-about p {
+  color: var(--hover-color);
+}
+
+.footer-line {
+  background-color: var(--hover-color);
+  width: 80%;
+  height: 1px;
+}
